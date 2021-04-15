@@ -14,7 +14,6 @@ void test_multiply(void);
 void test_divide(void);
 void test_power(void);
 void test_intrest(void);
-void test_percentage(void);
 void test_distance(void);
 void test_speed(void);
 void test_squareroot(void);
@@ -41,7 +40,6 @@ int main()
   RUN_TEST(test_divide);
   RUN_TEST(test_power);
   RUN_TEST(test_intrest);
-  RUN_TEST(test_percentage);
   RUN_TEST(test_distance);
   RUN_TEST(test_speed);
   RUN_TEST(test_squareroot);
