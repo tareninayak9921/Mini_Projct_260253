@@ -12,6 +12,7 @@
 
 [![Valgrind_Check](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Valgrind_Check.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Valgrind_Check.yml)
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/0277a98844c24bb496f3bd30eef06de2)](https://www.codacy.com/gh/tareninayak9921/Mini_Projct_260253/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tareninayak9921/Mini_Projct_260253&amp;utm_campaign=Badge_Grade)
 
 ## Folder Structure
 
