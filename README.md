@@ -8,6 +8,8 @@
 
 [![Contribution Check - Git Inspector](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Git_Inspector.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Git_Inspector.yml)
 
+[![cppcheck-action](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/cppcheck.yml)
+
 
 
 ## Folder Structure
