@@ -3,6 +3,7 @@
 ![maths2](https://img.icons8.com/cotton/2x/calculator--v2.png)
 
 [![C/C++ CI Build](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/c-cpp.yml)
+[![Cppcheck - StaticCode analysis](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/cppckeck.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/cppckeck.yml)
 
 ## Folder Structure
 
