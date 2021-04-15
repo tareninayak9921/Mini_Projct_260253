@@ -23,7 +23,7 @@ endif
 .PHONY : all test coverage run clean doc
 
 $(PROJECT_NAME) : $(SRC) 
-	gcc Main.c  -I -c $(DO_IT) -o $(call  FixPath,$(PROJECT_NAME).$(EXEC))
+	gcc main.c  -I -c $(DO_IT) -o $(call  FixPath,$(PROJECT_NAME).$(EXEC))
 run: $(PROJECT_NAME)
 	./$(PROJECT_NAME).$(EXEC)
 test:
