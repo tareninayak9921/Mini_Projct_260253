@@ -7,7 +7,7 @@ BUILD_DIR = Build
 # All source code files
 SRC =src/fun_add.c\
 src/fun_sub.c\
-src/fun_multiply.c src/fun_div.c src/fun_intrest.c src/fun_percentage.c src/fun_distance.c src/fun_speed.c src/fun_log.c src/fun_power.c src/fun_sqrt.c\
+src/fun_multiply.c src/fun_div.c src/fun_intrest.c src/fun_distance.c src/fun_speed.c src/fun_log.c src/fun_power.c src/fun_sqrt.c\
 src/fun_sin.c src/fun_cos.c\
 src/fun_tan.c
 
