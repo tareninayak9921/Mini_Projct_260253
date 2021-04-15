@@ -80,13 +80,7 @@ error_t division(xi *ai);
  * @return error_t SUCCESS if operation is completed successfully. Error value otherwise.
  */
 error_t intrest(xi *ai);
-/**
- * @brief compute percentage
- * 
- * @param ai ai pointer to arthimetic_inputs to send inputs for function and store ouptut.
- * @return error_t SUCCESS if operation is completed successfully. Error value otherwise.
- */
-error_t percentage(xi *ai);
+
 /**
  * @brief compute distance using speed and time
  * 
