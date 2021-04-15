@@ -1,4 +1,4 @@
-#include "calculator.h"
+#include "../inc/calculator.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
