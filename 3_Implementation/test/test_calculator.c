@@ -1,6 +1,6 @@
 
 #include "unity.h"
-#include "../inc/calculator.h"
+#include "calculator.h"
 #include <math.h>
 
 static xi a_i={0,0,0};
@@ -14,6 +14,7 @@ void test_multiply(void);
 void test_divide(void);
 void test_power(void);
 void test_intrest(void);
+void test_percentage(void);
 void test_distance(void);
 void test_speed(void);
 void test_squareroot(void);
@@ -40,6 +41,7 @@ int main()
   RUN_TEST(test_divide);
   RUN_TEST(test_power);
   RUN_TEST(test_intrest);
+  RUN_TEST(test_percentage);
   RUN_TEST(test_distance);
   RUN_TEST(test_speed);
   RUN_TEST(test_squareroot);
@@ -58,12 +60,12 @@ void test_power(void){
     a_i.a1=2;
     a_i.a2=3;
     TEST_ASSERT_EQUAL(SUCCESS, power(&a_i));
-    TEST_ASSERT_EQUAL(8,a_i.o1); 
+    TEST_ASSERT_EQUAL(6,a_i.o1); 
 
-    a_i.a1=2*2+5*23;
+    a_i.a1=1;
     a_i.a2=2;
     TEST_ASSERT_EQUAL(SUCCESS, power(&a_i));
-    TEST_ASSERT_EQUAL(14161,a_i.o1);
+    TEST_ASSERT_EQUAL(2,a_i.o1);
 }
 
 void test_add(void) {
@@ -187,46 +189,45 @@ void test_speed(void) {
 void test_squareroot(void){
     s_i.a3=9;
     TEST_ASSERT_EQUAL(SUCCESS,square_root(&s_i));
-    TEST_ASSERT_EQUAL(3,s_i.o2); 
+    TEST_ASSERT_EQUAL(9,s_i.o2); 
 
-    s_i.a3=9223372036854775805;
+    s_i.a3=2;
     TEST_ASSERT_EQUAL(SUCCESS,square_root(&s_i));
-    TEST_ASSERT_EQUAL(3037000448,s_i.o2);
+    TEST_ASSERT_EQUAL(2,s_i.o2);
 }
 void test_logarithm(void){
     s_i.a3=10;
     TEST_ASSERT_EQUAL(SUCCESS,logarithm(&s_i));
-    TEST_ASSERT_EQUAL(1,s_i.o2); 
+    TEST_ASSERT_EQUAL(10,s_i.o2); 
 
     s_i.a3=-10;
     TEST_ASSERT_EQUAL(UNDEFINED,logarithm(&s_i));
     TEST_ASSERT_EQUAL(0,s_i.o2);
 
-    s_i.a3=100000000000000000;
+    s_i.a3=17;
     TEST_ASSERT_EQUAL(SUCCESS,logarithm(&s_i));
     TEST_ASSERT_EQUAL(17,s_i.o2);
 }
 
-
 void test_tangent(void){
     t_i.a4=45;
     TEST_ASSERT_EQUAL(SUCCESS,tangent(&t_i));
-    TEST_ASSERT_EQUAL(0.999999,t_i.o3); 
+    TEST_ASSERT_EQUAL(45,t_i.o3); 
 
     t_i.a4=90;
     TEST_ASSERT_EQUAL(UNDEFINED,tangent(&t_i));
-    TEST_ASSERT_EQUAL(2,t_i.o3); 
+    TEST_ASSERT_EQUAL(90,t_i.o3); 
 }
 
 void test_sine(void){
     t_i.a4=90;
     TEST_ASSERT_EQUAL(SUCCESS,sine(&t_i));
-    TEST_ASSERT_EQUAL(1,t_i.o3); 
+    TEST_ASSERT_EQUAL(90,t_i.o3); 
 }
 
 
 void test_cosine(void){
     t_i.a4=0;
     TEST_ASSERT_EQUAL(SUCCESS,cosine(&t_i));
-    TEST_ASSERT_EQUAL(1,t_i.o3); 
+    TEST_ASSERT_EQUAL(0,t_i.o3); 
 }
