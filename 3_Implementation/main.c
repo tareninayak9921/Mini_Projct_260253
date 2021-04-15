@@ -49,8 +49,7 @@ int main(){
                 printf("Power   -->   %lld",structure_input1.o1);
                 break;
             case 7:
-                percentage(&structure_input1);
-                printf("Power   -->   %lld",structure_input1.o1);
+                printf("Not Implemented Yet");
                 break;
             case 8:
                 distance(&structure_input1);
