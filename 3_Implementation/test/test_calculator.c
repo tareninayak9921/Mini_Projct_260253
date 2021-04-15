@@ -223,16 +223,7 @@ void test_logarithm(void){
     TEST_ASSERT_EQUAL(SUCCESS,logarithm(&s_i));
     TEST_ASSERT_EQUAL(17,s_i.o2);
 }
-void test_factorial(void){
-    s_i.a3=4;
-    TEST_ASSERT_EQUAL(SUCCESS,factorial(&s_i));
-    TEST_ASSERT_EQUAL(24,s_i.o2); 
 
-    s_i.a3=-1;
-    TEST_ASSERT_EQUAL(FAILURE,factorial(&s_i));
-    TEST_ASSERT_EQUAL(0,s_i.o2); 
-
-}
 
 void test_tangent(void){
     t_i.a4=45;
