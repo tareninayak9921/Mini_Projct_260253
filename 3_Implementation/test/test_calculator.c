@@ -1,6 +1,6 @@
 
-#include "unity.h"
-#include "calculator.h"
+#include "../unity/unity.h"
+#include "../inc/calculator.h"
 #include <math.h>
 
 static xi a_i={0,0,0};
