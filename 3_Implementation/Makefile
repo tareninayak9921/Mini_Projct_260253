@@ -24,41 +24,52 @@ ifdef OS
    RM = del /q
    FixPath = $(subst /,\,$1)
    EXEC = exe
-   IN=
+   
 else
    ifeq ($(shell uname), Linux)
       RM = rm -rf
       FixPath = $1
-	  EXEC = out
-	  IN=-lm
+	  	EXEC = out
+	  
    endif
 endif
 
 # Makefile will not run target command if the name with file already exists. To override, use .PHONY
-.PHONY : all run test coverage cppcheck valgrind clean
+.PHONY : all test coverage run clean
 all:$(BUILD_DIR)
-	gcc main.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC)) $(IN)
-run: all
+	gcc main.c $(SRC) $(INC) -lm -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+# Call `make run` to run the application
+run: $(BUILD_DIR)
 	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
-test: $(SRC) $(TEST_SRC)
-	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) $(IN)
-	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) 
-	
-coverage:${PROJECT_NAME}
-	gcc -fprofile-arcs -ftest-coverage $(SRC) $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) $(IN)
-	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	gcov -a $(SRC)
-	
-cppcheck: $(SRC)
-	cppcheck --enable=all main.c $(SRC)
-valgrind:
-	valgrind $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
+#Coverage	
+coverage:$(BUILD_DIR)
+	gcc $(TEST_SRC) $(SRC) $(INC) -fprofile-arcs -ftest-coverage -lm -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+   #perform gcov -a *.gcno to check coverage
+
+# Remove all the built files, invoke by `make clean`
 clean:
 	$(RM) $(call FixPath,$(BUILD_DIR)/*)
-	rmdir $(BUILD_DIR) 
+	$(RM) *.gcda *.gcov *gcno 
+	$(RM) document/html*
 
+#cppcheck static code analysis	
+cppcheck:
+	cppcheck --enable=all --check-config --suppress=missingIncludeSystem main.c $(SRC) -Iinc 
 	
+valgrind:
+	gcc $(TEST_SRC) $(SRC) $(INC) -lm -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	valgrind $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+ 
+# Build and run the unit tests	
+test:$(BUILD_DIR)
+	gcc $(TEST_SRC) $(SRC) $(INC) -lm -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+		$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
-	
-	
+#doxygen documentation
+doc:
+	make -C document
+
+$(BUILD_DIR):
+	mkdir $(BUILD_DIR)
