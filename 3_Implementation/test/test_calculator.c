@@ -14,7 +14,6 @@ void test_multiply(void);
 void test_divide(void);
 void test_power(void);
 void test_intrest(void);
-void test_percentage(void);
 void test_distance(void);
 void test_speed(void);
 void test_squareroot(void);
@@ -41,7 +40,6 @@ int main()
   RUN_TEST(test_divide);
   RUN_TEST(test_power);
   RUN_TEST(test_intrest);
-  RUN_TEST(test_percentage);
   RUN_TEST(test_distance);
   RUN_TEST(test_speed);
   RUN_TEST(test_squareroot);
@@ -153,22 +151,7 @@ void test_intrest(void) {
     TEST_ASSERT_EQUAL(SUCCESS, intrest(&a_i));
     TEST_ASSERT_EQUAL(920,a_i.o1);     
 }
-void test_percentage(void) {
-    a_i.a1=80;
-    a_i.a2=100;
-    TEST_ASSERT_EQUAL(SUCCESS, percentage(&a_i));
-    TEST_ASSERT_EQUAL(80,a_i.o1); 
 
-    a_i.a1=20;
-    a_i.a2=100;
-    TEST_ASSERT_EQUAL(SUCCESS, percentage(&a_i));
-    TEST_ASSERT_EQUAL(20,a_i.o1); 
-
-    a_i.a1=10;
-    a_i.a2=50;
-    TEST_ASSERT_EQUAL(SUCCESS, percentage(&a_i));
-    TEST_ASSERT_EQUAL(20,a_i.o1);     
-}
 void test_distance(void) {
     a_i.a1=20;
     a_i.a2=10;
