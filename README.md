@@ -10,6 +10,7 @@
 
 [![cppcheck-action](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/cppcheck.yml)
 
+[![Valgrind_Check](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Valgrind_Check.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Valgrind_Check.yml)
 
 
 ## Folder Structure
