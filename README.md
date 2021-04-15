@@ -5,6 +5,11 @@
 [![C/C++ CI](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/c-cpp.yml)
 
 [![Code Coverage](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/code-coverage.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/code-coverage.yml)
+
+[![Contribution Check - Git Inspector](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Git_Inspector.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Git_Inspector.yml)
+
+
+
 ## Folder Structure
 
 Folder             | Description
