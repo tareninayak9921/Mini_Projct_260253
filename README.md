@@ -2,17 +2,16 @@
 
 ![maths2](https://img.icons8.com/cotton/2x/calculator--v2.png)
 
-[![C/C++ CI](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/c-cpp.yml)
 
-[![Code Coverage](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/code-coverage.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/code-coverage.yml)
 
-[![Contribution Check - Git Inspector](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Git_Inspector.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Git_Inspector.yml)
+Build | Code Quality | [Git Inspector](using github.io option) |
+-----------------|-----------------|-----------------|-----------------|
+[![C/C++ CI](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/c-cpp.yml) | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/0277a98844c24bb496f3bd30eef06de2)](https://www.codacy.com/gh/tareninayak9921/Mini_Projct_260253/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tareninayak9921/Mini_Projct_260253&amp;utm_campaign=Badge_Grade) | [![Contribution Check - Git Inspector](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Git_Inspector.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Git_Inspector.yml)
 
-[![cppcheck-action](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/cppcheck.yml)
+ | Code Coverage | CppCheck | Valgrind |
+ | -------------------------------| -------------------------------| -------------------------------| -------------------------------|
+ | [![Code Coverage](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/code-coverage.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/code-coverage.yml) | [![cppcheck-action](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/cppcheck.yml) | [![Valgrind_Check](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Valgrind_Check.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Valgrind_Check.yml)|
 
-[![Valgrind_Check](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Valgrind_Check.yml/badge.svg)](https://github.com/tareninayak9921/Mini_Projct_260253/actions/workflows/Valgrind_Check.yml)
-
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/0277a98844c24bb496f3bd30eef06de2)](https://www.codacy.com/gh/tareninayak9921/Mini_Projct_260253/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=tareninayak9921/Mini_Projct_260253&amp;utm_campaign=Badge_Grade)
 
 ## Folder Structure
 
