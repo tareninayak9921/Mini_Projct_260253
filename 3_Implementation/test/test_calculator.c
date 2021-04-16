@@ -3,6 +3,19 @@
 #include "../inc/calculator.h"
 #include "../src/fun_power.c"
 #include "../src/fun_add.c"
+#include "../src/fun_sub.c"
+#include "../src/fun_sin.c"
+#include "../src/fun_cos.c"
+#include "../src/fun_tan.c"
+#include "../src/fun_sqrt.c"
+#include "../src/fun_speed.c"
+#include "../src/fun_distance.c"
+#include "../src/fun_div.c"
+#include "../src/fun_intrest.c"
+#include "../src/fun_log.c"
+#include "../src/fun_multiply.c"
+
+
 
 #include <math.h>
 
