@@ -230,7 +230,7 @@ void test_tangent(void){
 
     t_i.a4=90;
     TEST_ASSERT_EQUAL(UNDEFINED,tangent(&t_i));
-    TEST_ASSERT_EQUAL(90,t_i.o3); 
+    TEST_ASSERT_EQUAL(2,t_i.o3); 
 }
 
 void test_sine(void){
